@@ -1,0 +1,1083 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.global-wrapper {
+    overflow-x: hidden;
+}
+
+#not-found {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+#not-found .not-found-text {
+    font-family: 'Roboto';
+    font-weight: 100;
+    font-size:32px;
+    color: rgba(0,0,0,0.6);
+}
+
+#not-found .not-found-link {
+    font-family: 'Roboto';
+    font-weight: 100;
+    font-size: 26px;
+    margin: 10px;
+}
+
+/* Estilos para dispositivos móveis pequenos*/
+@media (max-width: 374px) {
+    /* Header */
+    .section-header {
+        background-color: #6B8077;
+    }
+
+    .header-logo {
+        width: 80%;
+    }
+
+    .header-open-btn {
+        width: 30px;
+    }
+
+    .contato {
+        color: #ffffff;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 600;
+        font-size: 9px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .menu-list {
+        list-style: none;
+    }
+
+    .menu-item {
+        display: block;
+    }
+
+    .mobile-list {
+        background-color: #566e64 !important;
+        border: none !important;
+        border-radius: 0 !important;
+    }
+
+    .menu-item a {
+        color: #fcd8d8;
+        font-family: 'Roboto', sans-serif;
+        font-size: 13px;
+        font-weight: 400;
+        margin: 0 4px;
+    }
+
+    .menu-item.active a {
+        color: #ffffff;
+        font-family: 'Roboto', sans-serif;
+        font-size: 13px;
+        font-weight: 400;
+        margin: 0 4px;
+    }
+
+    .menu-item a:hover {
+        color: #ffffff;
+        font-family: 'Roboto', sans-serif;
+        font-size: 13px;
+        font-weight: 400;
+        text-decoration: none;
+    }
+
+    /* Section Carousel */
+    .carousel-img {
+        width: 100%;
+    }
+
+    .bg-green {
+        background-color: #6B8077;
+    }
+
+    .carousel-title {
+        color: #ffffff;
+        font-family: 'Poppins', sans-serif;
+        font-size: 15px;
+        font-weight: 400;
+    }
+
+    .carousel-description {
+        color: #ffffff;
+        font-family: 'Poppins', sans-serif;
+        font-size: 15px;
+        font-weight: 400;
+        margin-top: 11px;
+    }
+
+    /* Serviços Section */
+    .servicos-section {
+        background-image: url('../img/servicos-bg.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .servicos-title {
+        font-family: 'Poppins', sans-serif;
+        font-size: 26px;
+        text-transform: uppercase;
+        font-weight: 600;
+        color: #6B8077;
+    }
+
+    .servicos-box {
+        background-color: #607B7D;
+    }
+
+    .servicos-box-grey {
+        background-color: #D9D3D3;
+    }
+
+    .servicos-description {
+        color: #ffffff;
+        font-family: 'Roboto', sans-serif;
+        font-size: 23px;
+        font-weight: 500;
+    }
+
+    .servicos-btn {
+        color: #ffffff;
+        font-family: 'Roboto', sans-serif;
+        font-size: 19px;
+        background: #558D75;
+        border: none !important;
+        padding: 10px 18px;
+        width: 80%;
+    }
+
+    /* Section Corpo Clínico */
+    .corpo-clinico {
+        background: #E8E8E8
+    }
+
+    .corpo-clinico-img {
+        width: 100%;
+    }
+
+    .green-cover {
+        opacity: 0;
+        position: absolute;
+        width: 82%;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        transition: .3s;
+    }
+
+    .img-wrapper:hover .green-cover {
+        opacity: 1;
+        transition: .3s;
+    }
+
+    .corpo-clinico-hover {
+        opacity: 0;
+        pointer-events: none;
+        position: absolute;
+        bottom: 10px;
+        right: 0;
+        left: 0;
+        margin: auto;
+        transition: .3;
+    }
+
+    .img-wrapper:hover .corpo-clinico-hover {
+        opacity: 1;
+        pointer-events: all;
+        transition: .3;
+    }
+
+    .corpo-clinico-nome {
+        color: #ffffff;
+        font-family: 'Poppins', sans-serif;
+        font-size: 63%;
+        font-weight: 600;
+    }
+
+    .corpo-clinico-button {
+        font-family: 'Poppins', sans-serif;
+        font-size: 10px;
+        color: #505050 !important;
+        font-weight: 600 !important;
+        border-radius: 0 !important;
+        width: 75%;
+    }
+
+    /* Section Onde Estamos */
+    .onde-estamos-title {
+        font-family: 'Poppins', sans-serif;
+        font-size: 25px;
+        text-transform: uppercase;
+        font-weight: 600;
+        color: #6B8077;
+    }
+
+    .onde-estamos-description {
+        color: #6A6A6A;
+        font-family: 'Roboto', sans-serif;
+        font-size: 17px;
+        font-weight: 400;
+        line-height: 25px;
+    }
+
+    .onde-estamos-btn {
+        color: #ffffff;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 600;
+        font-size: 19px;
+        background: #6B8077;
+        border: none !important;
+        padding: 10px 18px;
+        width: 89%;
+    }
+
+    /* Section Footer */
+    .footer {
+        background-color: #6B8077;
+    }
+
+    .footer-logo {
+        width: 100%;
+    }
+
+    .footer-logo-name {
+        width: 80%;
+    }
+
+    .footer-contato {
+        color: #ffffff;
+        font-family: 'Poppins', sans-serif;
+        font-size: 15px;
+        font-weight: 400;
+    }
+
+    .footer-list {
+        list-style: none;
+        padding: 0;
+    }
+
+    .footer-list-icon {
+        display: inline-block;
+        width: 12px;
+    }
+
+    .footer-list-contato {
+        display: inline-block;
+        color: #ffffff;
+        font-family: 'Poppins', sans-serif;
+        font-size: 8px;
+        font-weight: 400;
+    }
+
+    .map-responsive{
+        overflow:hidden;
+        padding-bottom:56.25%;
+        position:relative;
+        height:0;
+    }
+    .map-responsive iframe{
+        left:0;
+        top:0;
+        height:100%;
+        width:100%;
+        position:absolute;
+    }
+}
+
+/* Estilos para dispositivos móveis */
+@media (min-width: 375px) and (max-width: 700px) {
+    /* Header */
+    .section-header {
+        background-color: #6B8077;
+    }
+
+    .header-logo {
+        width: 80%;
+    }
+
+    .header-open-btn {
+        width: 30px;
+    }
+
+    .contato {
+        color: #ffffff;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 600;
+        font-size: 9px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .menu-list {
+        list-style: none;
+    }
+
+    .menu-item {
+        display: block;
+    }
+
+    .mobile-list {
+        background-color: #566e64 !important;
+        border: none !important;
+        border-radius: 0 !important;
+    }
+
+    .menu-item a {
+        color: #fcd8d8;
+        font-family: 'Roboto', sans-serif;
+        font-size: 15px;
+        font-weight: 400;
+        margin: 0 4px;
+    }
+
+    .menu-item.active a {
+        color: #ffffff;
+        font-family: 'Roboto', sans-serif;
+        font-size: 15px;
+        font-weight: 400;
+        margin: 0 4px;
+    }
+
+    .menu-item a:hover {
+        color: #ffffff;
+        font-family: 'Roboto', sans-serif;
+        font-size: 15px;
+        font-weight: 400;
+        text-decoration: none;
+    }
+
+    /* Section Carousel */
+    .carousel-img {
+        width: 100%;
+    }
+
+    .bg-green {
+        background-color: #6B8077;
+    }
+
+    .carousel-title {
+        color: #ffffff;
+        font-family: 'Poppins', sans-serif;
+        font-size: 15px;
+        font-weight: 400;
+    }
+
+    .carousel-description {
+        color: #ffffff;
+        font-family: 'Poppins', sans-serif;
+        font-size: 15px;
+        font-weight: 400;
+        margin-top: 11px;
+    }
+
+    /* Serviços Section */
+    .servicos-section {
+        background-image: url('../img/servicos-bg.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .servicos-title {
+        font-family: 'Poppins', sans-serif;
+        font-size: 26px;
+        text-transform: uppercase;
+        font-weight: 600;
+        color: #6B8077;
+    }
+
+    .servicos-box {
+        background-color: #607B7D;
+    }
+
+    .servicos-box-grey {
+        background-color: #D9D3D3;
+    }
+
+    .servicos-description {
+        color: #ffffff;
+        font-family: 'Roboto', sans-serif;
+        font-size: 23px;
+        font-weight: 500;
+    }
+
+    .servicos-btn {
+        color: #ffffff;
+        font-family: 'Roboto', sans-serif;
+        font-size: 19px;
+        background: #558D75;
+        border: none !important;
+        padding: 10px 18px;
+        width: 80%;
+    }
+
+    /* Section Corpo Clínico */
+    .corpo-clinico {
+        background: #E8E8E8
+    }
+
+    .corpo-clinico-img {
+        width: 100%;
+    }
+
+    .green-cover {
+        opacity: 0;
+        position: absolute;
+        width: 84%;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        transition: .3s;
+    }
+
+    .img-wrapper:hover .green-cover {
+        opacity: 1;
+        transition: .3s;
+    }
+
+    .corpo-clinico-hover {
+        opacity: 0;
+        pointer-events: none;
+        position: absolute;
+        bottom: 10px;
+        right: 0;
+        left: 0;
+        margin: auto;
+        transition: .3;
+    }
+
+    .img-wrapper:hover .corpo-clinico-hover {
+        opacity: 1;
+        pointer-events: all;
+        transition: .3;
+    }
+
+    .corpo-clinico-nome {
+        color: #ffffff;
+        font-family: 'Poppins', sans-serif;
+        font-size: 80%;
+        font-weight: 600;
+    }
+
+    .corpo-clinico-button {
+        font-family: 'Poppins', sans-serif;
+        font-size: 10px;
+        color: #505050 !important;
+        font-weight: 600 !important;
+        border-radius: 0 !important;
+        width: 75%;
+    }
+
+    /* Section Onde Estamos */
+    .onde-estamos-title {
+        font-family: 'Poppins', sans-serif;
+        font-size: 25px;
+        text-transform: uppercase;
+        font-weight: 600;
+        color: #6B8077;
+    }
+
+    .onde-estamos-description {
+        color: #6A6A6A;
+        font-family: 'Roboto', sans-serif;
+        font-size: 17px;
+        font-weight: 400;
+        line-height: 25px;
+    }
+
+    .onde-estamos-btn {
+        color: #ffffff;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 600;
+        font-size: 19px;
+        background: #6B8077;
+        border: none !important;
+        padding: 10px 18px;
+        width: 89%;
+    }
+
+    /* Section Footer */
+    .footer {
+        background-color: #6B8077;
+    }
+
+    .footer-logo {
+        width: 100%;
+    }
+
+    .footer-logo-name {
+        width: 80%;
+    }
+
+    .footer-contato {
+        color: #ffffff;
+        font-family: 'Poppins', sans-serif;
+        font-size: 15px;
+        font-weight: 400;
+    }
+
+    .footer-list {
+        list-style: none;
+        padding: 0;
+    }
+
+    .footer-list-icon {
+        display: inline-block;
+        width: 12px;
+    }
+
+    .footer-list-contato {
+        display: inline-block;
+        color: #ffffff;
+        font-family: 'Poppins', sans-serif;
+        font-size: 8px;
+        font-weight: 400;
+    }
+
+    .map-responsive{
+        overflow:hidden;
+        padding-bottom:56.25%;
+        position:relative;
+        height:0;
+    }
+    .map-responsive iframe{
+        left:0;
+        top:0;
+        height:100%;
+        width:100%;
+        position:absolute;
+    }
+}
+
+/* Estilos para tablets */
+@media (min-width : 701px) and (max-width : 1023px) {
+    /* Header */
+    .section-header {
+        background-color: #6B8077;
+    }
+
+    .header-logo {
+        width: 80%;
+    }
+
+    .header-open-btn {
+        width: 30px;
+    }
+
+    .contato {
+        color: #ffffff;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 600;
+        font-size: 9px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .menu-list {
+        list-style: none;
+    }
+
+    .menu-item {
+        display: block;
+    }
+
+    .mobile-list {
+        background-color: #566e64 !important;
+        border: none !important;
+        border-radius: 0 !important;
+    }
+
+    .menu-item a {
+        color: #fcd8d8;
+        font-family: 'Roboto', sans-serif;
+        font-size: 15px;
+        font-weight: 400;
+        margin: 0 4px;
+    }
+
+    .menu-item.active a {
+        color: #ffffff;
+        font-family: 'Roboto', sans-serif;
+        font-size: 15px;
+        font-weight: 400;
+        margin: 0 4px;
+    }
+
+    .menu-item a:hover {
+        color: #ffffff;
+        font-family: 'Roboto', sans-serif;
+        font-size: 15px;
+        font-weight: 400;
+        text-decoration: none;
+    }
+
+    /* Section Carousel */
+    .carousel-img {
+        width: 100%;
+    }
+
+    .bg-green {
+        background-color: #6B8077;
+    }
+
+    .carousel-title {
+        color: #ffffff;
+        font-family: 'Poppins', sans-serif;
+        font-size: 15px;
+        font-weight: 400;
+    }
+
+    .carousel-description {
+        color: #ffffff;
+        font-family: 'Poppins', sans-serif;
+        font-size: 15px;
+        font-weight: 400;
+        margin-top: 11px;
+    }
+
+    /* Serviços Section */
+    .servicos-section {
+        background-image: url('../img/servicos-bg.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .servicos-title {
+        font-family: 'Poppins', sans-serif;
+        font-size: 26px;
+        text-transform: uppercase;
+        font-weight: 600;
+        color: #6B8077;
+    }
+
+    .servicos-box {
+        background-color: #607B7D;
+    }
+
+    .servicos-box-grey {
+        background-color: #D9D3D3;
+    }
+
+    .servicos-description {
+        color: #ffffff;
+        font-family: 'Roboto', sans-serif;
+        font-size: 23px;
+        font-weight: 500;
+    }
+
+    .servicos-btn {
+        color: #ffffff;
+        font-family: 'Roboto', sans-serif;
+        font-size: 19px;
+        background: #558D75;
+        border: none !important;
+        padding: 10px 18px;
+        width: 80%;
+    }
+
+    /* Section Corpo Clínico */
+    .corpo-clinico {
+        background: #E8E8E8
+    }
+
+    .corpo-clinico-img {
+        width: 100%;
+    }
+
+    .green-cover {
+        opacity: 0;
+        position: absolute;
+        width: 89%;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        transition: .3s;
+    }
+
+    .img-wrapper:hover .green-cover {
+        opacity: 1;
+        transition: .3s;
+    }
+
+    .corpo-clinico-hover {
+        opacity: 0;
+        pointer-events: none;
+        position: absolute;
+        bottom: 10px;
+        right: 0;
+        left: 0;
+        margin: auto;
+        transition: .3;
+    }
+
+    .img-wrapper:hover .corpo-clinico-hover {
+        opacity: 1;
+        pointer-events: all;
+        transition: .3;
+    }
+
+    .corpo-clinico-nome {
+        color: #ffffff;
+        font-family: 'Poppins', sans-serif;
+        font-size: 90%;
+        font-weight: 600;
+    }
+
+    .corpo-clinico-button {
+        font-family: 'Poppins', sans-serif;
+        font-size: 10px;
+        color: #505050 !important;
+        font-weight: 600 !important;
+        border-radius: 0 !important;
+        width: 75%;
+    }
+
+    /* Section Onde Estamos */
+    .onde-estamos-title {
+        font-family: 'Poppins', sans-serif;
+        font-size: 25px;
+        text-transform: uppercase;
+        font-weight: 600;
+        color: #6B8077;
+    }
+
+    .onde-estamos-description {
+        color: #6A6A6A;
+        font-family: 'Roboto', sans-serif;
+        font-size: 17px;
+        font-weight: 400;
+        line-height: 25px;
+    }
+
+    .onde-estamos-btn {
+        color: #ffffff;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 600;
+        font-size: 19px;
+        background: #6B8077;
+        border: none !important;
+        padding: 10px 18px;
+        width: 89%;
+    }
+
+    /* Section Footer */
+    .footer {
+        background-color: #6B8077;
+    }
+
+    .footer-logo {
+        width: 100%;
+    }
+
+    .footer-logo-name {
+        width: 80%;
+    }
+
+    .footer-contato {
+        color: #ffffff;
+        font-family: 'Poppins', sans-serif;
+        font-size: 15px;
+        font-weight: 400;
+    }
+
+    .footer-list {
+        list-style: none;
+        padding: 0;
+    }
+
+    .footer-list-icon {
+        display: inline-block;
+        width: 12px;
+    }
+
+    .footer-list-contato {
+        display: inline-block;
+        color: #ffffff;
+        font-family: 'Poppins', sans-serif;
+        font-size: 8px;
+        font-weight: 400;
+    }
+
+    .map-responsive{
+        overflow:hidden;
+        padding-bottom:56.25%;
+        position:relative;
+        height:0;
+    }
+    .map-responsive iframe{
+        left:0;
+        top:0;
+        height:100%;
+        width:100%;
+        position:absolute;
+    }
+}
+
+/* Estilos para dispositivos Desktops e Laptops */
+@media (min-width: 1024px) {
+    /* Header */
+    .section-header {
+        background-color: #6B8077;
+    }
+
+    .header-logo {
+        width: 80%;
+    }
+
+    .contato {
+        color: #ffffff;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 600;
+        font-size: 13px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .menu-list {
+        list-style: none;
+    }
+
+    .menu-item {
+        display: inline-block;
+    }
+
+    .menu-item a {
+        color: #fcd8d8;
+        font-family: 'Roboto', sans-serif;
+        font-size: 15px;
+        font-weight: 400;
+        margin: 0 4px;
+    }
+
+    .menu-item.active a {
+        color: #ffffff;
+        font-family: 'Roboto', sans-serif;
+        font-size: 15px;
+        font-weight: 400;
+        margin: 0 4px;
+    }
+
+    .menu-item a:hover {
+        color: #ffffff;
+        font-family: 'Roboto', sans-serif;
+        font-size: 15px;
+        font-weight: 400;
+        text-decoration: none;
+    }
+
+    /* Section Carousel */
+    .carousel-img {
+        width: 100%;
+    }
+
+    .bg-green {
+        background-color: #6B8077;
+    }
+
+    .carousel-title {
+        color: #ffffff;
+        font-family: 'Poppins', sans-serif;
+        font-size: 38px;
+        font-weight: 400;
+    }
+
+    .carousel-description {
+        color: #ffffff;
+        font-family: 'Poppins', sans-serif;
+        font-size: 25px;
+        font-weight: 400;
+        margin-top: 30px;
+    }
+
+    /* Serviços Section */
+    .servicos-section {
+        background-image: url('../img/servicos-bg.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .servicos-title {
+        font-family: 'Poppins', sans-serif;
+        font-size: 30px;
+        text-transform: uppercase;
+        font-weight: 600;
+        color: #6B8077;
+    }
+
+    .servicos-box {
+        background-color: #607B7D;
+    }
+
+    .servicos-box-grey {
+        background-color: #D9D3D3;
+    }
+
+    .servicos-description {
+        color: #ffffff;
+        font-family: 'Roboto', sans-serif;
+        font-size: 23px;
+        font-weight: 500;
+    }
+
+    .servicos-btn {
+        color: #ffffff;
+        font-family: 'Roboto', sans-serif;
+        font-size: 19px;
+        background: #558D75;
+        border: none !important;
+        padding: 10px 18px;
+        width: 80%;
+    }
+
+    /* Section Corpo Clínico */
+    .corpo-clinico {
+        background: #E8E8E8
+    }
+
+    .corpo-clinico-img {
+        width: 100%;
+    }
+
+    .green-cover {
+        opacity: 0;
+        position: absolute;
+        width: 87%;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        transition: .3s;
+    }
+
+    .img-wrapper:hover .green-cover {
+        opacity: 1;
+        transition: .3s;
+    }
+
+    .corpo-clinico-hover {
+        opacity: 0;
+        pointer-events: none;
+        position: absolute;
+        bottom: 10px;
+        right: 0;
+        left: 0;
+        margin: auto;
+        transition: .3;
+    }
+
+    .img-wrapper:hover .corpo-clinico-hover {
+        opacity: 1;
+        pointer-events: all;
+        transition: .3;
+    }
+
+    .corpo-clinico-nome {
+        color: #ffffff;
+        font-family: 'Poppins', sans-serif;
+        font-size: 15px;
+        font-weight: 600;
+    }
+
+    .corpo-clinico-button {
+        font-family: 'Poppins', sans-serif;
+        font-size: 10px;
+        color: #505050 !important;
+        font-weight: 600 !important;
+        border-radius: 0 !important;
+        width: 75%;
+    }
+
+    /* Section Onde Estamos */
+    .onde-estamos-title {
+        font-family: 'Poppins', sans-serif;
+        font-size: 25px;
+        text-transform: uppercase;
+        font-weight: 600;
+        color: #6B8077;
+    }
+
+    .onde-estamos-description {
+        color: #6A6A6A;
+        font-family: 'Roboto', sans-serif;
+        font-size: 17px;
+        font-weight: 400;
+        line-height: 25px;
+    }
+
+    .onde-estamos-btn {
+        color: #ffffff;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 600;
+        font-size: 19px;
+        background: #6B8077;
+        border: none !important;
+        padding: 10px 18px;
+        width: 89%;
+    }
+
+    /* Section Footer */
+    .footer {
+        background-color: #6B8077;
+    }
+
+    .footer-logo {
+        width: 100%;
+    }
+
+    .footer-logo-name {
+        width: 80%;
+    }
+
+    .footer-contato {
+        color: #ffffff;
+        font-family: 'Poppins', sans-serif;
+        font-size: 15px;
+        font-weight: 400;
+    }
+
+    .footer-list {
+        list-style: none;
+    }
+
+    .footer-list-icon {
+        display: inline-block;
+        width: 20px;
+    }
+
+    .footer-list-contato {
+        display: inline-block;
+        color: #ffffff;
+        font-family: 'Poppins', sans-serif;
+        font-size: 15px;
+        font-weight: 400;
+    }
+
+    .map-responsive{
+        overflow:hidden;
+        padding-bottom:56.25%;
+        position:relative;
+        height:0;
+    }
+    .map-responsive iframe{
+        left:0;
+        top:0;
+        height:100%;
+        width:100%;
+        position:absolute;
+    }
+}
