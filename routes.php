@@ -19,6 +19,11 @@ return [
     'routeName' => 'Quem Somos',
     'file' => 'quem-somos.html',
     'template' => 1,
+  ],
+  '/estrutura' => [
+    'routeName' => 'Estrutura',
+    'file' => 'estrutura.html',
+    'template' => 1,
   ]
 ];
 ?>

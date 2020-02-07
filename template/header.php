@@ -47,7 +47,7 @@
                             <ul class="menu-list p-0 m-0">
                                 <li class="menu-item <?= $currentRoute['routeName'] == 'Home' ? 'active' : '' ?>"><a href="./">HOME</a></li>
                                 <li class="menu-item <?= $currentRoute['routeName'] == 'Quem Somos' ? 'active' : '' ?>"><a href="./quem-somos">QUEM SOMOS</a></li>
-                                <li class="menu-item <?= $currentRoute['routeName'] == 'Estrutura' ? 'active' : '' ?>"><a href="#">ESTRUTURA</a></li>
+                                <li class="menu-item <?= $currentRoute['routeName'] == 'Estrutura' ? 'active' : '' ?>"><a href="./estrutura">ESTRUTURA</a></li>
                                 <li class="menu-item <?= $currentRoute['routeName'] == 'Serviços' ? 'active' : '' ?>"><a href="#">SERVIÇOS</a></li>
                                 <li class="menu-item <?= $currentRoute['routeName'] == 'Localização' ? 'active' : '' ?>"><a href="#">LOCALIZAÇÃO</a></li>
                                 <li class="menu-item <?= $currentRoute['routeName'] == 'Fale Conosco' ? 'active' : '' ?>"><a href="#">FALE CONOSCO</a></li>
@@ -81,7 +81,7 @@
                             <ul class="menu-list">
                                 <li class="menu-item <?= $currentRoute['routeName'] == 'Home' ? 'active' : '' ?>"><a href="./">HOME</a></li>
                                 <li class="menu-item <?= $currentRoute['routeName'] == 'Quem Somos' ? 'active' : '' ?>"><a href="./quem-somos">QUEM SOMOS</a></li>
-                                <li class="menu-item <?= $currentRoute['routeName'] == 'Estrutura' ? 'active' : '' ?>"><a href="#">ESTRUTURA</a></li>
+                                <li class="menu-item <?= $currentRoute['routeName'] == 'Estrutura' ? 'active' : '' ?>"><a href="./estrutura">ESTRUTURA</a></li>
                                 <li class="menu-item <?= $currentRoute['routeName'] == 'Serviços' ? 'active' : '' ?>"><a href="#">SERVIÇOS</a></li>
                                 <li class="menu-item <?= $currentRoute['routeName'] == 'Localização' ? 'active' : '' ?>"><a href="#">LOCALIZAÇÃO</a></li>
                                 <li class="menu-item <?= $currentRoute['routeName'] == 'Fale Conosco' ? 'active' : '' ?>"><a href="#">FALE CONOSCO</a></li>
