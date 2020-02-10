@@ -29,6 +29,11 @@ html {
     margin: 10px;
 }
 
+a:hover {
+    color: #ffffff;
+    text-decoration: none !important;
+}
+
 /* Estilos para dispositivos móveis pequenos*/
 @media (max-width: 374px) {
     /* Header */
@@ -68,7 +73,7 @@ html {
     }
 
     .menu-item a {
-        color: #fcd8d8;
+        color: #BEBEBE;
         font-family: 'Roboto', sans-serif;
         font-size: 13px;
         font-weight: 400;
@@ -334,7 +339,7 @@ html {
     }
 
     .menu-item a {
-        color: #fcd8d8;
+        color: #BEBEBE;
         font-family: 'Roboto', sans-serif;
         font-size: 15px;
         font-weight: 400;
@@ -600,7 +605,7 @@ html {
     }
 
     .menu-item a {
-        color: #fcd8d8;
+        color: #BEBEBE;
         font-family: 'Roboto', sans-serif;
         font-size: 15px;
         font-weight: 400;
@@ -856,7 +861,7 @@ html {
     }
 
     .menu-item a {
-        color: #fcd8d8;
+        color: #BEBEBE;
         font-family: 'Roboto', sans-serif;
         font-size: 15px;
         font-weight: 400;

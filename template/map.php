@@ -14,12 +14,14 @@
                   <div class="col-12 col-lg-5 d-flex align-items-center order-lg-2">
                       <div class="row">
                           <div class="col-12 col-lg-9 position-relative">
-                              <h1 class="onde-estamos-title">Onde Estamos</h1>
-                              <h1 class="onde-estamos-description">Estamos localizados no novo Setor Médico de
-                                  Brasília - Via L2 Sul Quadra 616 Centro Clínico Línea Vitta - próximo
-                                  aos mais atuais e modernos hospitais e serviços de saúde da capital do país.
-                              </h1>
-                              <button class="d-none d-lg-block onde-estamos-btn my-5">Agendar Atendimento</button>
+                                <h1 class="onde-estamos-title">Onde Estamos</h1>
+                                <h1 class="onde-estamos-description">Estamos localizados no novo Setor Médico de
+                                    Brasília - Via L2 Sul Quadra 616 Centro Clínico Línea Vitta - próximo
+                                    aos mais atuais e modernos hospitais e serviços de saúde da capital do país.
+                                </h1>
+                                <a class="w-100" href="/humberto/fale-conosco">
+                                    <button class="d-none d-lg-block onde-estamos-btn my-5">Agendar Atendimento</button>
+                                </a>
                           </div>
                       </div>
                   </div>
